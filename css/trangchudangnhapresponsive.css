@@ -1,0 +1,175 @@
+@media (max-width: 1200px) {    
+}
+@media (max-width: 767px) {
+    .desktop {
+        display: none !important;
+    }
+    .mobile {
+        display: block;
+    }
+    /*thanh bar*/
+    .chitietnha.mobile{
+        display: flex;
+        float: right;
+        margin-left: 161px;
+        width: 235px;
+    }
+    .chitietnha.mobile .fas.fa-comments{
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .chitietnha.mobile .fas.fa-globe{
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .chitietnha.mobile .avata{
+        width: 135px;
+        display: inline-block;
+    }
+    .chitietnha.mobile .avata a{        
+        height: auto;
+    }
+    .chitietnha.mobile .avata a img{
+        max-width: 18%;
+    }
+    .chitietnha.mobile .avata a.ten{
+        display: inline-block;
+    }
+    .menutren ._2 .ndsearch{
+        width: 100%;
+    }
+
+    .content .chung .giua{
+        width: 100%;
+    }
+    .content .chung .giua .noidung{
+        height:auto;
+    }
+    .content .giua .duoigiua ul li{
+        padding:5px;
+    }
+    body{
+        font-family: auto;
+    }
+    .content .chung{
+        border-bottom: 1px solid #DDD;
+    }
+    .footer .noidung {
+        flex-direction: column;
+    }
+    .footer .noidung .trai {
+        width: 100%;
+        padding: 30px 10px;
+    }
+    .footer .noidung .phai {
+        width: 100%;
+    }
+    .content .giua .duoigiua ul{
+        border-left: 1px solid #DDD;
+        border-right: 1px solid #DDD;
+    }
+    /*MENU*/
+    .menu .menutren ._1 img {
+        height: auto;
+        width: 100%;
+    }
+    .menutren ._2 .search {
+        width: 18%;
+        font-size: 20px;
+        padding: 15px 0px;
+    }
+    .menutren ._2 .ndsearch {
+        padding: 17px 0px;
+    }
+    .form-control {
+        height: 30px;
+    }
+    .bars.mobile {
+        padding: 8px;
+        cursor: pointer;
+        display: flex;
+    }
+    .fa-bars {
+        font-size: 20px;
+    }
+    /*Xử lý Menu*/
+    .den {
+        cursor: pointer;
+        z-index: 999;
+        transition: 0.4s;
+        background: #0000007a;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .noidungto {
+        transition: 0.4s;
+        height: calc(100vh - 105px);
+    }
+    .dichtrai {
+        transform: translateX(-100%);
+    }
+    .dichphai {
+        transform: translateX(0%);
+    }
+    .len {
+        opacity: 1;
+        visibility: visible;
+    }
+    /*Xu ly menu*/
+    .den {
+        cursor: pointer;
+        z-index: 999;
+        transition: 0.4s;
+        background: #0000007a;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .noidungto {
+        transition: 0.4s;
+        height: calc(100vh - 105px);
+    }
+
+    .noidungto .menutrai {
+        /*height: calc(100vh - 105px);*/
+        width: 75%;
+        position: fixed;
+        left: 0;
+        z-index: 1000;
+        transition: 0.4s;
+        overflow: hidden;
+    }
+    .noidungto .menutrai h3.menu1 {
+        color: white;
+        background: black;
+        margin: 0;
+        height: 60px;
+        font-size: 20px;
+        display: inline-block;
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+    }
+
+
+    .dichtrai {
+        transform: translateX(-100%);
+    }
+    .dichphai {
+        transform: translateX(0%);
+    }
+    .len {
+        opacity: 1;
+        visibility: visible;
+    }
+
+   
+}

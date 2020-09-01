@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* mau dung trong trang
+background: #f2f2f2;
+border-bottom: 1px solid #DDD;
+color: #00abffe0;
+color: #48483f;
+color: #b6b6b3;
+
+*/
+
+body {
+    background: #f2f2f2;
+}
+
+.menu {
+    height: 105px;
+    border-bottom: 1px solid #DDD;
+    box-shadow: 0px 1px 4px 0px #DDD;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    z-index: 999;
+    transition: 0.4s;
+}
+.clearfix{
+    clear: both;
+}
+.mobile{
+    display: none;
+}
+
+
+/* menutren*/
+
+.menu .menutren {
+    height: 65px;
+    border-bottom: 1px solid #DDD;
+}
+
+.menu .menutren .row {
+    height: 100%;
+}
+
+.menu .menutren .row ._1 {
+    height: 100%;
+}
+
+.menu .menutren ._1 img {
+    padding: 10px 0px;
+    max-height: 100%;
+}
+
+.menutren ._2 {
+    display: flex;
+    height: 100%;
+}
+
+.menutren ._2 .search {
+    width: 10%;
+    font-size: 25px;
+    padding: 10px 0px;
+}
+
+.menutren ._2 .ndsearch {
+    width: 80%;
+    padding: 10px 0px;
+}
+
+.menutren ._3 {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.menutren ._3 .chitietnha {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menutren ._3 .chitietnha i {
+    width: 15%;
+    font-size: 23px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.menutren ._3 .chitietnha .avata {
+    width: 59%;
+}
+
+.menutren ._3 .chitietnha .avata img {
+    max-width: 21%;
+    max-height: 90%;
+    border-radius: 50%;
+}
+
+.menutren ._3 .chitietnha .avata a.ten {
+    color: #48483f;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+
+/*menu duoi*/
+
+.menu .menuduoi {
+    height: 40px;
+}
+
+.menuduoi .list ul {
+    display: flex;
+    list-style: none;
+    margin: 5px 0px;
+}
+
+.menuduoi .list ul li {
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.menuduoi .list ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.menuduoi .list ul li:hover a {
+    color: #00abffe0;
+}
+
+
+/* ----content----- */
+
+.content .chung {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+    
+}
+
+
+/**/
+
+.content .chung .trai {
+    width: 15%;
+}
+
+.content .chung .trai a.khoichung {
+    display: block;
+    font-size: 17px;
+    padding: 5px;
+    color: #48483f;
+    text-decoration: none;
+}
+
+.content .chung .trai a.khoichung i {
+    padding-right: 15px;
+}
+
+
+/**/
+
+.content .chung .giua {
+    width: 54%;
+}
+.content .chung .giua .banner{
+    position: relative;     
+}
+
+.content .chung .giua .banner:after,.content .chung .giua .banner:before{
+    content: "";
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:1px solid black;
+    border-left-color:transparent;
+    border-right-color: transparent;
+    transform:scaleX(0);
+    transition: 0.4s linear ;      
+}
+.content .chung .giua .banner:before{
+    border-left-color:black;
+    border-right-color:black;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    transform: scaleY(0);
+}
+.content .chung .giua .banner:hover:after{
+    transform: scaleX(1);
+    
+}
+.content .chung .giua .banner:hover::before{
+    transform: scaleY(1);
+}
+
+
+.content .chung .giua .banner img {
+    width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+/*-------Nội dung chi tiêt*/
+
+.content .chung .giua .thongtin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-bottom: 1px solid #99A3AD;
+}
+
+.content .chung .giua .thongtin .noidungtren {
+    padding: 15px;
+}
+
+.content .chung .giua .thongtin .noidungtren a.avata {
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+}
+
+.content .giua .thongtin .noidungtren .avata img {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content .giua .thongtin .noidungtren .thongtintren {
+    font-size: 14px;
+    padding-left: 48px;
+}
+
+.content .giua .thongtin .noidungtren .thongtintren a.tacgia {
+    color: black;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content .giua .thongtin .noidungtren .thongtintren span {
+    color: #b6b6b3;
+    font-size: 15px;
+}
+
+.content .giua .thongtin .noidungtren .thongtintren a.chude {
+    color: #48483f;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.content .giua .thongtin .noidungtren .thongtinduoi {
+    font-size: 14px;
+    padding-left: 48px;
+    color: #b6b6b3;
+}
+
+.content .giua .thongtin .noidungtren .thongtinduoi span {
+    margin-left: 15px;
+}
+
+.content .giua .thongtin .noidungtren .thongtinduoi span:last-child {
+    margin-left: 10px;
+}
+
+.content .giua .thongtin .tittle {
+    padding: 15px;
+}
+
+.content .giua .thongtin .noidungchinh {
+    padding: 15px;
+    border-bottom: 1px solid #99A3AD;
+}
+
+.content .giua .thongtin .noidungchinh .phan1 {
+    margin-bottom: 25px;
+}
+
+.content .giua .thongtin .noidungchinh .phan1 img {
+    width: 100%;
+    height: auto;
+}
+
+.content .giua .thongtin .noidungchinh .phan1 .mota {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.content .giua .thongtin .noidungchinh .phan2 {
+    font-style: italic;
+    color: #555;
+    background: #F5F5F6;
+    margin-bottom: 15px;
+}
+
+.content .giua .thongtin .noidungchinh .phan3 {}
+
+.content .giua .thongtin .noidungchinh .phan3 .noidung_1 {
+    margin-bottom: 25px;
+}
+
+.content .giua .thongtin .noidungchinh .phan3 h3 {
+    margin-bottom: 25px;
+}
+
+.content .giua .thongtin .phaixemcuoi {
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.content .giua .thongtin .phaixemcuoi .tieude {
+    font-size: 17px;
+    font-family: segoe ui;
+    font-weight: bold;
+    width: 100%;
+    color: #696966;
+    padding: 10px 0px 10px 0px;
+}
+
+.content .giua .thongtin .phaixemcuoi button {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.content .giua .comment_chinh {
+    background: white;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-bottom: 1px solid #99A3AD;
+}
+.content .giua .comment_chinh h4{
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+
+/*-------------------------*/
+
+.content .chung .giua .khac {
+    
+}
+.content .chung .giua .khac .goiy{
+    text-align: center;
+    border-bottom:1px solid #F5F5F6;
+    background: #3e3535;
+    margin-bottom: 10px;
+    color:white;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.content .chung .giua .noidung {
+    height: 425px;
+    margin-top: 10px;
+    border-bottom: 1px solid #F5F5F6;
+    background:white;
+    border-radius:2%;
+    border-bottom: 1px solid #99A3AD;
+
+}
+
+.content .chung .giua .noidung .noidungtren {
+    padding: 15px;
+}
+
+.content .chung .giua .noidung .noidungtren a.avata {
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+}
+
+.content .giua .noidung .noidungtren .avata img {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content .giua .noidung .noidungtren .thongtintren {
+    font-size: 14px;
+    padding-left: 48px;
+}
+
+.content .giua .noidung .noidungtren .thongtintren a.tacgia {
+    color: black;
+}
+
+.content .giua .noidung .noidungtren .thongtintren span {
+    color: #b6b6b3;
+}
+
+.content .giua .noidung .noidungtren .thongtintren a.chude {
+    color: #48483f;
+}
+
+.content .giua .noidung .noidungtren .thongtinduoi {
+    font-size: 14px;
+    padding-left: 48px;
+    color: #b6b6b3;
+}
+
+.content .giua .noidung .noidungtren .thongtinduoi span:last-child {
+    margin-left: 15px;
+}
+
+.content .giua .noidung .noidunggiua {
+    padding-left: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.content .giua .noidung .noidunggiua h3 {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.content .giua .noidung .noidunggiua p {
+    color: #48483f;
+}
+.content .giua .noidung .noidunggiua .tieude{
+    padding-top:5px;
+    padding-bottom: 3px;
+}
+
+.content .giua .noidung .noidunggiua img {
+    height: 200px;
+    width: 100%;
+}
+
+.content .giua .noidung .noidungduoi {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.content .giua .noidung .noidungduoi .bentrai {
+    float: left;
+}
+
+.content .giua .noidung .noidungduoi .benphai {
+    float: right;
+    display: inline;
+    padding-right: 15px;
+}
+
+.content .giua .noidung .noidungduoi .benphai a {
+    display: inline-block;
+    padding-left: 10px;
+    color: #212529;
+}
+
+.content .giua .duoigiua {
+    padding: 15px;
+    text-align: center;
+}
+
+.content .giua .duoigiua ul {
+    list-style: none;
+}
+
+.content .giua .duoigiua ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.content .giua .duoigiua ul li a {
+    color: #48483f;
+}
+
+.content .giua .duoigiua ul li:hover {
+    background: #2bb8f1;
+}
+
+
+/**/
+
+.content .chung .phai {
+    width: 28%;
+}
+
+.content .chung .phai .phaidau p {
+    font-family: segoe ui;
+    font-size: 15px;
+}
+
+.content .chung .phai .phaidau .donate {
+    margin-top: 10px;
+    background: white;
+    border: 1px solid black;
+    padding: 6px 20px;
+    border-radius: 45%;
+}
+
+.content .chung .phai .phaidau img {
+    width: 100%;
+    height: 160px;
+    margin-top: 20px;
+}
+
+.content .chung .phai .phaigiua {
+    margin-top: 20px;
+}
+
+.content .chung .phai .phaigiua .tieude {
+    font-size: 17px;
+    font-family: segoe ui;
+    font-weight: bold;
+    border-bottom: 1px solid #DDD;
+    width: 100%;
+    color: #696966;
+    padding: 10px 0px 10px 0px;
+}
+
+.content .chung .phai .phaigiua ._chungtrai {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .chung .phai .phaigiua ._chungtrai .cottrai {
+    width: 15%;
+    position: relative;
+}
+
+.content .chung .phai .phaigiua ._chungtrai .cottrai img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.content .chung .phai .phaigiua ._chungtrai .cotphai {
+    width: 84%;
+    padding: 5px 0px 0px 15px;
+}
+
+.content .chung .phai .phaigiua ._chungtrai .cotphai a.dau {
+    font-size: 14px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.content .chung .phai .phaigiua ._chungtrai .cotphai a {
+    display: inline-block;
+    font-size: 13px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #2bb8f1;
+}
+
+.content .chung .phai .phaigiua ._chungtrai .cotphai span {
+    font-size: 13px;
+    color: #b6b6b3;
+}
+
+.content .chung .phai .phaixemcuoi .tieude {
+    font-size: 17px;
+    font-family: segoe ui;
+    font-weight: bold;
+    width: 100%;
+    color: #696966;
+    padding: 10px 0px 10px 0px;
+}
+
+.content .chung .phai .phaixemcuoi button {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.content .chung .phai .phaicuoi .tieude {
+    font-size: 17px;
+    font-family: segoe ui;
+    font-weight: bold;
+    width: 100%;
+    color: #696966;
+    padding: 10px 0px 10px 0px;
+}
+
+.content .chung .phai .phaicuoi .banner {
+    margin-top: 10px;
+}
+
+.content .chung .phai .phaicuoi .banner img {
+    width: 100%;
+    height: 340px;
+}
+
+
+/*--------footer-----------*/
+
+.footer .noidung {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-top: 1px solid #DDD;
+    background: white;
+}
+
+.footer .noidung .trai {
+    width: 49%;
+    padding: 50px 10px;
+}
+
+.footer .noidung .trai .text {
+    font-size: 14px;
+    font-family: segoe ui;
+    color: #48483f;
+}
+
+.footer .noidung .phai {
+    width: 49%;
+    padding: 30px 10px;
+}
+
+.footer .noidung .phai img {
+    max-height: 100%;
+    width: 200px;
+    padding: 10px 0px;
+}
+
+.footer .noidung .phai h4 {
+    font-family: segoe ui;
+    color: #6e6e6e;
+}
+
+.footer .noidung .phai a {
+    font-family: segoe ui;
+    color: #2bb8f1;
+    padding: 10px 34px 10px 0px;
+    display: inline-block;
+}
+
+.footer .noidung .phai .social i {
+    font-size: 35px;
+    color: black;
+    padding: 10px 34px 10px 0px;
+    cursor: pointer;
+}
+/*Xử lý sự kiện*/
+.xulymenu {
+    transform: translateY(-62%);
+    background: #f3f3f0;
+}
+.dunglai{
+    position: fixed;
+    top:2px;
+    width: 23%;
+}

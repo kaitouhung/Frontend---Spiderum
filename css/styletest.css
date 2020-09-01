@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    height: 105px;
+    border-bottom: 1px solid #DDD;
+    box-shadow: 0px 1px 4px 0px #DDD;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    z-index: 999;
+    transition: 0.4s;
+}
+
+.mobile {
+    display: none;
+}
+
+
+/* menutren*/
+
+.menu .menutren {
+    height: 65px;
+    border-bottom: 1px solid #DDD;
+}
+
+.menu .menutren .row {
+    height: 100%;
+}
+
+.menu .menutren .row ._1 {
+    height: 100%;
+}
+
+.menu .menutren ._1 img {
+    padding: 10px 0px;
+    max-height: 100%;
+}
+
+.menutren ._2 {
+    display: flex;
+    height: 100%;
+}
+
+.menutren ._2 .search {
+    width: 10%;
+    font-size: 25px;
+    padding: 10px 0px;
+}
+
+.menutren ._2 .ndsearch {
+    width: 80%;
+    padding: 10px 0px;
+}
+
+.menutren ._3 {
+    display: flex;
+    justify-content: space-between
+}
+
+.menutren ._3 .chitietnha {
+    padding: 10px;
+}
+
+.menutren ._3 .vietbai {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px 25px;
+    border-radius: 22px;
+    background: #2FB5FA;
+    border-color: #2FB5FA;
+    color: #FFF;
+}
+
+.menutren ._3 .dangky {
+    text-align: right;
+    border-right: 1px solid #DDD;
+    padding-left: 47px;
+    padding-right: 20px;
+    color: #48483f;
+}
+
+.menutren ._3 .dangnhap {
+    padding-left: 10px;
+    color: #48483f;
+}
+
+.xulymenu {
+    transform: translateY(-62%);
+    background: #f3f3f0;
+}
+
+
+/*menu duoi*/
+
+.menu .menuduoi {
+    height: 40px;
+}
+
+.menuduoi .list ul {
+    display: flex;
+    list-style: none;
+    margin: 5px 0px;
+}
+
+.menuduoi .list ul li {
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.menuduoi .list ul li a {
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.menuduoi .list ul li:hover a {
+    color: #00abffe0;
+}
+
+
+/*slider*/
+
+.slider {
+    margin: 130px 0px 20px 0px;
+}
+
+.slider .carousel-item {
+    height: 250px;
+}
+
+.slider .carousel-item img {
+    max-height: 100%;
+    width: 100%;
+}
+
+
+/*content*/
+
+
+/*------kieu 1.1-----*/
+
+.content .kieu1 {
+    margin-top: 20px;
+}
+
+.content .kieu1 .tieude {
+    font-size: 17px;
+    font-family: segoe ui;
+    font-weight: bold;
+    border-bottom: 1px solid #DDD;
+    width: 100%;
+    color: #696966;
+}
+
+.content .kieu1 span {
+    float: right;
+    cursor: pointer;
+}
+
+.content .kieu1 .noidung {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    margin-top: 10px;
+}
+
+.content .kieu1 .noidung .chinh {
+    width: 49%;
+    border: 1px solid #DDD;
+    position: relative;
+}
+
+.content .kieu1 .noidung .chinh img {
+    width: 100%;
+    height: 270px;
+}
+
+.content .kieu1 .noidung .chinh p {
+    margin-bottom: 0px;
+    padding: 20px 10px 0px;
+    cursor: pointer;
+}
+
+.content .kieu1 .noidung .chinh .avata {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
+
+.content .kieu1 .noidung .chinh .avata img {
+    width: 100%;
+    border-radius: 50%;
+    max-height: 100%;
+}
+
+.content .kieu1 .noidung .chinh a.cuoi {
+    position: absolute;
+    bottom: 35px;
+    left: 70px;
+    color: #48483f;
+}
+
+.content .kieu1 .noidung .phu {
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #DDD;
+}
+
+.content .kieu1 .noidung .phu .items {
+    width: 49%;
+    height: 280px;
+    border: 1px solid #DDD;
+    position: relative;
+}
+
+.content .kieu1 .noidung .phu .items img {
+    width: 100%;
+    height: 40%;
+}
+
+.content .kieu1 .noidung .phu .items img.avata {
+    width: 10%;
+    height: auto;
+}
+
+.content .kieu1 .noidung .phu .items p {
+    padding: 15px 13px;
+    font-weight: bold;
+    font-family: segoe ui;
+    cursor: pointer;
+}
+
+.content .kieu1 .noidung .phu .items .avata {
+    height: 90px;
+    width: 36px;
+    position: absolute;
+    bottom: -25px;
+    left: 20px;
+}
+
+.content .kieu1 .noidung .phu .items .avata img {
+    width: 100%;
+    border-radius: 50%;
+    max-height: 100%;
+}
+
+.content .kieu1 .noidung .phu .items a.cuoi {
+    position: absolute;
+    bottom: 35px;
+    left: 70px;
+    color: #48483f;
+}
+
+
+/*------kieu 1.2-----*/
+
+.content .kieu1 .chung {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.content .kieu1 .chung .chungtrai {
+    width: 75%;
+}
+.content .kieu1 .chung .chungtrai a._ajax{
+    text-decoration: none;
+    color: black;
+}
+
+.content .kieu1 .chung .chungtrai ._chungtrai {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.content .kieu1 .chung .chungtrai ._chungtrai:after {
+    content: '';
+}
+
+.content .kieu1 .chung .chungtrai ._chungtrai .cottrai {
+    width: 35%;
+}
+
+.content .kieu1 .chung .chungtrai ._chungtrai .cottrai img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .kieu1 .chung .chungtrai ._chungtrai .cotphai {
+    width: 65%;
+    padding: 5px 0px 0px 15px;
+    position: relative;
+}
+
+.content .kieu1 .chung .chungtrai ._chungtrai .cotphai p.dau {
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 1px;
+}
+.content .kieu1 .chung .chungtrai ._chungtrai .cotphai a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+   
+}
+
+.content .kieu1 .chung .chungtrai ._chungtrai .cotphai .avata {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.content .kieu1 .chung .chungtrai ._chungtrai .cotphai .avata img {
+    width: 100%;
+    border-radius: 50%;
+    max-height: 100%;
+}
+
+.content .kieu1 .chung .chungtrai ._chungtrai .cotphai a.cuoi {
+    position: absolute;
+    bottom: 25px;
+    left: 70px;
+    color: #48483f;
+    font-size: 15px;
+}
+
+.content .kieu1 .chung .chungtrai ._chungtrai .cotphai p.cuoi {
+    position: absolute;
+    bottom: 10px;
+    left: 70px;
+    color: #48483f;
+    font-size: 15px;
+}
+
+.content .kieu1 .chung .chungphai {
+    width: 24%;
+}
+
+.content .kieu1 .chung .chungphai img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*--------footer-----------*/
+
+.footer .noidung {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-top: 1px solid #DDD;
+}
+
+.footer .noidung .trai {
+    width: 49%;
+    padding: 50px 10px;
+}
+
+.footer .noidung .trai .text {
+    font-size: 14px;
+    font-family: segoe ui;
+    color: #48483f;
+}
+
+.footer .noidung .phai {
+    width: 49%;
+    padding: 30px 10px;
+}
+
+.footer .noidung .phai img {
+    max-height: 100%;
+    width: 200px;
+    padding: 10px 0px;
+}
+
+.footer .noidung .phai h4 {
+    font-family: segoe ui;
+    color: #6e6e6e;
+}
+
+.footer .noidung .phai a {
+    font-family: segoe ui;
+    color: #2bb8f1;
+    padding: 10px 34px 10px 0px;
+    display: inline-block;
+}
+
+.footer .noidung .phai .social i {
+    font-size: 35px;
+    color: black;
+    padding: 10px 34px 10px 0px;
+    cursor: pointer;
+}

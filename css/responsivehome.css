@@ -1,0 +1,197 @@
+/* Medium Desktop */
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none !important;
+    }
+    .mobile {
+        display: block;
+    }
+    /*MENU*/
+    .noidungto {
+        /*height: calc(100vh - 105px);*/
+    }
+    .noidungto .menutrai {
+        /*height: calc(100vh - 105px);*/
+        width: 75%;
+        position: fixed;
+        left: 0;
+        z-index: 1000;
+        transition: 0.4s;
+        overflow: hidden;
+    }
+    .noidungto .menutrai h3.menu1 {
+        color: white;
+        background: black;
+        margin: 0;
+        height: 60px;
+        font-size: 20px;
+        display: inline-block;
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+    }
+    .bars.mobile {
+        padding: 8px;
+        cursor: pointer;
+    }
+    .fa-bars {
+        font-size: 20px;
+    }
+    .bars.mobile .dangky {
+        display: inline-block;
+        float: right;
+        margin-left: 8px;
+        color: #48483f;
+        cursor: pointer;
+    }
+    .bars.mobile .dangnhap {
+        display: inline-block;
+        float: right;
+        border-right: 1px solid #48483f;
+        padding-right: 8px;
+        color: #48483f;
+        cursor: pointer;
+    }
+    .menu .menutren ._1 img {
+        height: auto;
+        width: 100%;
+    }
+    .menutren ._2 .search {
+        width: 18%;
+        font-size: 20px;
+        padding: 15px 0px;
+    }
+    .menutren ._2 .ndsearch{
+        width: 100%;
+    }
+    .form-control {
+        height: 30px;
+    }
+    /**/
+    .content .kieu1 .noidung {
+        flex-direction: column;
+        height: 100%;
+    }
+    .content .kieu1 .noidung .chinh {
+        height: 480px;
+        width: 100%;
+    }
+    .content .kieu1 .noidung .chinh .avata {
+        height: 90px;
+        width: 36px;
+        bottom: -25px;
+    }
+    .content .kieu1 .noidung .chinh img {
+        width: 100%;
+        height: 40%;
+    }
+    .content .kieu1 .noidung .phu {
+        width: 100%;
+        flex-direction: column;
+    }
+    .content .kieu1 .noidung .phu .items {
+        width: 100%;
+        margin-top: 15px;
+    }
+    /*Xử lý Menu*/
+    .den {
+        cursor: pointer;
+        z-index: 999;
+        transition: 0.4s;
+        background: #0000007a;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .noidungto {
+        transition: 0.4s;
+        height: calc(100vh - 105px);
+    }
+    .dichtrai {
+        transform: translateX(-100%);
+    }
+    .dichphai {
+        transform: translateX(0%);
+    }
+    .len {
+        opacity: 1;
+        visibility: visible;
+    }
+    /**/
+    .content .kieu1 .chung {
+        flex-direction: column;
+    }
+    .content .kieu1 .chung .chungtrai {
+        height: 100%;
+        width: 100%;
+    }
+    .content .kieu1 .chung .chungtrai ._chungtrai {
+        height: 165px;
+    }
+    .content .kieu1 .chung .chungtrai ._chungtrai .cottrai img {
+        height: 50%;
+    }
+    .content .kieu1 .chung .chungtrai ._chungtrai .cotphai a {
+        font-size: 18px;
+    }
+    .content .kieu1 .chung .chungtrai ._chungtrai .cotphai p {
+        font-size: 14px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-top: 10px;
+    }
+    .content .kieu1 .chung .chungtrai ._chungtrai .cotphai .avata {
+        width: 36px;
+        /* height: 36px; */
+        bottom: 5px;
+    }
+    .content .kieu1 .chung .chungtrai ._chungtrai .cotphai a.cuoi {
+        bottom: 15px;
+    }
+    .content .kieu1 .chung .chungphai {
+        display: none;
+        width: 0%;
+    }
+    .footer .noidung {
+        flex-direction: column;
+    }
+    .footer .noidung .trai {
+        width: 100%;
+        padding: 30px 10px;
+    }
+    .footer .noidung .phai {
+        width: 100%;
+    }
+    .slider .carousel-item img {
+        width: 100%;
+        height: 100%;
+    }
+    .slider .container {
+        height: 175px;
+    }
+    .slider .container .row {
+        height: 100%;
+    }
+    .slider .container .row .pointer-event {
+        height: 100%;
+    }
+    .carousel-inner {
+        height: 100%;
+    }
+    .carousel-indicators {
+        height: 100%;
+    }
+    .slider .carousel-item {
+        height: 100%;
+    }
+    .content .kieu1 .chung .chungtrai ._chungtrai .cotphai p.dau{
+        font-size:18px;
+    }
+}
